@@ -1,104 +1,126 @@
 body {
-    background-color:white;
+  background-color: white;
 }
 
 header {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
-    justify-content: end;
+  display: flex;
+  list-style: none;
+  justify-content: end;
 }
 
 nav a {
-    font-size: 25px;
-    font-weight: 300;
-    justify-content: end; 
-    text-decoration: none;
-    padding: 20px;
-    color: black;
-    border-radius: 10px;
+  font-size: 20px;
+  font-weight: 300;
+  justify-content: end;
+  text-decoration: none;
+  color: black;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.log {
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  height: 20px;
+  background-color: white;
+}
+
+.log:hover {
+  background-color: burlywood;
+}
+
+.accounts {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+
+.accounts:hover {
+  background-color: burlywood;
 }
 
 .nav-links a {
-    font-weight: 300;
-    justify-items: end;
-    text-decoration: none;
+  font-weight: 300;
+  justify-items: end;
+  text-decoration: none;
 }
 
 .nav-links {
-    display: flex;
-    list-style: none;
-}
-
-nav a:hover {
-    color:burlywood;
+  display: flex;
+  list-style: none;
 }
 
 .login-content {
-   display: flex; 
-   position: relative;
-   left: 450px;
+  display: flex;
+  position: relative;
+  left: 450px;
 }
 
 .logo {
-    display: flex;
-    border-radius: 20px;
-    width: 150px;
-    height: 120px;
-    position: relative;
-    bottom: 50px;
-    left: 600px;
+  display: flex;
+  border-radius: 20px;
+  width: 150px;
+  height: 120px;
+  position: relative;
+  bottom: 50px;
+  left: 600px;
 }
 
 form {
-    background-color: wheat;
-    padding: 25px;
-    width: 340px;
-    height: 360px;
-    border-radius: 25px;
-    text-align: center;
+  background-color: wheat;
+  padding: 25px;
+  width: 340px;
+  height: 360px;
+  border-radius: 25px;
+  text-align: center;
 }
 
 form:hover {
-    background-color: cornsilk;
+  background-color: cornsilk;
 }
 
 .credentials label {
-    font-weight: 300;
-    color: black;
+  font-weight: 300;
+  color: black;
 }
 
 .credentials input {
-    border-radius: 15px;
-    height: 5px;
-    padding: 15px;
-    background-color: white;
-    margin: auto;
+  border-radius: 15px;
+  height: 5px;
+  padding: 15px;
+  background-color: white;
+  margin: auto;
 }
 
 .credentials .btn {
-    font-size: large;
-    border-radius: 15px;
-    width: 150px;
-    padding: 5px;
-    background-color: white;
-    color: black;
+  font-size: large;
+  border-radius: 15px;
+  width: 150px;
+  padding: 5px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
 }
 
 .btn:hover {
-    background-color:burlywood;
+  background-color: burlywood;
 }
 
 .credentials .btn1 {
-    border-radius: 20px;
-    padding: 10px;
-    background-color: black;
-    color: white;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }
 
 .btn1:hover {
-    background-color: burlywood;
+  background-color: burlywood;
 }
