@@ -1,5 +1,6 @@
 *{
-    
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -17,6 +18,8 @@ nav ul {
 }
 
 nav a {
+    font-size: 25px;
+    font-weight: 300;
     color: blue;
     justify-content: end; 
     text-decoration: none;
@@ -37,6 +40,10 @@ nav a {
     list-style: none;
 }
 
+nav a:hover {
+    color:burlywood;
+}
+
 .login-content {
    display: flex; 
    position: relative;
@@ -46,10 +53,15 @@ nav a {
 form {
     background-color: wheat;
     padding: 25px;
-    width: 350px;
-    height: 400px;
+    width: 320px;
+    height: 340px;
     border-radius: 25px;
     text-align: center;
+    box-shadow: black;
+}
+
+form:hover {
+    background-color: cornsilk;
 }
 
 .credentials label {
@@ -58,17 +70,24 @@ form {
 }
 
 .credentials input {
-    border-radius: 20px;
+    border-radius: 15px;
+    height: 5px;
     padding: 15px;
     background-color: white;
     margin: auto;
 }
 
 .credentials .btn {
-    border-radius: 20px;
-    padding: 15px;
+    font-size: large;
+    border-radius: 15px;
+    width: 150px;
+    padding: 5px;
     background-color: white;
     color: black;
+}
+
+.btn:hover {
+    background-color:burlywood;
 }
 
 .credentials .btn1 {
@@ -76,4 +95,8 @@ form {
     padding: 10px;
     background-color: black;
     color: white;
+}
+
+.btn1:hover {
+    background-color: burlywood;
 }
