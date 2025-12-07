@@ -1,10 +1,5 @@
-*{
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 body {
-    background-color: white;
+    background-color:white;
 }
 
 header {
@@ -20,7 +15,6 @@ nav ul {
 nav a {
     font-size: 25px;
     font-weight: 300;
-    color: blue;
     justify-content: end; 
     text-decoration: none;
     padding: 20px;
@@ -32,7 +26,6 @@ nav a {
     font-weight: 300;
     justify-items: end;
     text-decoration: none;
-    color: blue;
 }
 
 .nav-links {
@@ -50,14 +43,23 @@ nav a:hover {
    left: 450px;
 }
 
+.logo {
+    display: flex;
+    border-radius: 20px;
+    width: 150px;
+    height: 120px;
+    position: relative;
+    bottom: 50px;
+    left: 600px;
+}
+
 form {
     background-color: wheat;
     padding: 25px;
-    width: 320px;
-    height: 340px;
+    width: 340px;
+    height: 360px;
     border-radius: 25px;
     text-align: center;
-    box-shadow: black;
 }
 
 form:hover {
