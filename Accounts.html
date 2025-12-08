@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link rel="stylesheet" href="./styles/accounts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -13,8 +14,8 @@
         <div class="menu">
             <nav>
                 <ul>
-                    <a href="./login.html">Login</a>
-                    <a href="./Accounts.html">Sign up</a>
+                    <a href="./login.html" class="log">Login</a>
+                    <a href="./Accounts.html" class="accounts">Sign up</a>
                 </ul>
             </nav>
         </div>
@@ -29,22 +30,22 @@
                 <div class="credentials">
                     <p>
                         <label for="name">Name</label>
-                        <input type="text" id="name" placeholder="name" required>
+                        <input type="text" id="name" placeholder="name" required><i class="fa fa-user" style="font-size: 15px;"></i>
                     </p>
 
                     <p>
                         <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="email" required>
+                        <input type="email" id="email" placeholder="email" required><i class="fa fa-envelope" style="font-size: 15px;"></i>
                     </p>
 
                     <p>
                         <label for="password">Password</label>
-                        <input type="password" id="password" placeholder="password" required>
+                        <input type="password" id="password" placeholder="password" required><i class="fa fa-lock" style="font-size: 15px;"></i>
                     </p>
 
                     <p>
                         <label for="confirm">Confirm Password</label>
-                        <input type="password" id="confirm" placeholder="confirm password" required>
+                        <input type="password" id="confirm" placeholder="confirm password" required><i class="fa fa-lock" style="font-size: 15px;"></i>
                     </p>
                 </div>
                 <a href="./login.html"><button type="button" class="btn">Sign Up</button></a>
