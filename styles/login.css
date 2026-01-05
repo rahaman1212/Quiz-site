@@ -1,5 +1,6 @@
 body {
   background-color: white;
+  margin: 0;
 }
 
 header {
@@ -20,6 +21,13 @@ nav a {
   color: black;
   border-radius: 10px;
   margin: 20px;
+}
+
+.layout {
+  justify-content: center;
+  margin-bottom: 0;
+  position: relative;
+  bottom: 80px;
 }
 
 .log {
@@ -59,8 +67,7 @@ nav a {
 
 .login-content {
   display: flex;
-  position: relative;
-  left: 450px;
+  justify-content: center;
 }
 
 .logo {
@@ -68,9 +75,10 @@ nav a {
   border-radius: 20px;
   width: 150px;
   height: 120px;
+  margin-bottom: 50px;
   position: relative;
-  bottom: 50px;
   left: 600px;
+  justify-content: center;
 }
 
 form {
