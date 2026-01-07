@@ -48,6 +48,7 @@ nav a {
   padding: 10px;
   background-color: black;
   color: white;
+  cursor: pointer;
 }
 
 .accounts:hover {
