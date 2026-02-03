@@ -1,0 +1,258 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+  color: #222;
+  line-height: 1.7;
+}
+
+/* ================= HEADER & NAV ================= */
+header {
+  background: #0b5ed7;
+  border-radius: 30px;
+  padding: 12px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  justify-content: center;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* DROPDOWNS */
+.dropdown,
+.dropdowm1,
+.dropdown2 {
+  position: relative;
+}
+
+.dropdown a + a,
+.dropdowm1 li,
+.dropdown2 li {
+  display: none;
+}
+
+.dropdown:hover a + a,
+.dropdowm1:hover li,
+.dropdown2:hover li {
+  display: block;
+}
+
+.dropdown li,
+.dropdowm1 li,
+.dropdown2 li {
+  background: #fff;
+  padding: 10px 15px;
+}
+
+.dropdown li a,
+.dropdowm1 li a,
+.dropdown2 li a {
+  color: #222;
+}
+
+/* ================= HERO ================= */
+.hero {
+  background: linear-gradient(135deg, #0b5ed7, #4dabf7);
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.quiz h2 {
+    color: white;
+}
+
+.courses-btn {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.courses-btn a {
+  background: #fff;
+  color: #0b5ed7;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.courses-btn a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.quiz {
+  margin-top: 30px;
+}
+
+.btn {
+  background: #ffc107;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #ffca2c;
+}
+
+/* ================= SECTIONS ================= */
+section {
+  padding: 60px 40px;
+}
+
+.course h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #0b5ed7;
+}
+
+/* TOPICS LIST */
+.topics ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.topics a {
+  background: #e9ecef;
+  padding: 10px 18px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.topics a:hover {
+  background: #0b5ed7;
+  color: #fff;
+}
+
+/* ================= CONTENT BOXES ================= */
+.Science-1,
+.science-2,
+.science-3,
+.English-1,
+.English-2,
+.English-3,
+.Social-1 {
+  background: #fff;
+  padding: 30px;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+h1, h2, h3, h4 {
+  margin: 20px 0 10px;
+  color: #0b5ed7;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+ul, ol {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* ================= TABLES ================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+table th {
+  background: #0b5ed7;
+  color: #fff;
+}
+
+/* ================= BUTTONS ================= */
+.button button,
+.button1 button {
+  background: #0b5ed7;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.button button:hover,
+.button1 button:hover {
+  background: #084298;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 40px 20px;
+  }
+}
+
+.button3 a button {
+  background: #0b5ed7;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+}
