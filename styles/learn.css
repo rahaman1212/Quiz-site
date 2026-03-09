@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Segoe UI", Arial, sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -20,6 +21,10 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+}
+
+nav {
+  justify-items: end;
 }
 
 nav ul {
@@ -255,4 +260,35 @@ table th {
   border-radius: 8px;
   cursor: pointer;
   font-size: 15px;
+}
+
+.scroll-btn.up{
+  position: relative;
+  left: 1200px;
+  bottom: 60px;
+  border-radius: 15px;
+  font-size: 30px;
+  border: none;
+  height: 45px;
+  width: 45px;
+  background-color: #0b5ed7;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.scroll-btn.down{
+  position: relative;
+  left: 1150px;
+  border-radius: 15px;
+  border: none;
+  font-size: 30px;
+  height: 45px;
+  width: 45px;
+  background-color: #0b5ed7;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
 }
