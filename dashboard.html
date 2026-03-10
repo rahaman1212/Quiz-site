@@ -48,6 +48,16 @@
                         <p>5</p>
                     </div>
                 </div>
+
+                <div class="stat-card">
+                    <div class="stat-info">
+                        <h2>My Quiz Score</h2>
+                            <span id="subject"></span>
+                            <span id="topic"></span>
+                            <span id="score"></span>
+                    </div>
+                </div>
+
             </div>
 
         </div>
@@ -62,61 +72,67 @@
                         <h2>Subjects</h2>
                         <div class="science-info">
                             <h3>Science</h3>
-                            <button type="button">View your Ratings</button>
-                            <datalist>
-                                <table>
-                                    <tr>
-                                        <th>percentage</th>
-                                        <th>Last time studied</th>
-                                        <th>topics studied most</th>
-                                    </tr>
-                                    <tr>
-                                        <td>30%</td>
-                                        <td>1/3/2026</td>
-                                        <td>measurement</td>
-                                    </tr>
-                                </table>
-                            </datalist>
+                            <details>
+                                <button type="button">View your Ratings</button>
+                                <datalist>
+                                    <table>
+                                        <tr>
+                                            <th>percentage</th>
+                                            <th>Last time studied</th>
+                                            <th>topics studied most</th>
+                                        </tr>
+                                        <tr>
+                                            <td>30%</td>
+                                            <td>1/3/2026</td>
+                                            <td>measurement</td>
+                                        </tr>
+                                    </table>
+                                </datalist>
+                            </details>
                             <a href="#Science"><button>Learn Science</button></a>
                         </div>
 
                         <div class="english-info">
                             <h3>English</h3>
-                            <button type="button">View your Ratings</button>
-                            <datalist>
-                                <table>
-                                    <tr>
-                                        <th>percentage</th>
-                                        <th>Last time studied</th>
-                                        <th>topics studied most</th>
-                                    </tr>
-                                    <tr>
-                                        <td>50%</td>
-                                        <td>yesterday</td>
-                                        <td>Verbs</td>
-                                    </tr>
-                                </table>
-                            </datalist>
+                            <details>
+                                <button type="button">View your Ratings</button>
+                                <datalist>
+                                    <table>
+                                        <tr>
+                                            <th>percentage</th>
+                                            <th>Last time studied</th>
+                                            <th>topics studied most</th>
+                                        </tr>
+                                        <tr>
+                                            <td>50%</td>
+                                            <td>yesterday</td>
+                                            <td>Verbs</td>
+                                        </tr>
+                                    </table>
+                                </datalist>
+                            </details>
                             <a href="#English"><button>Learn English</button></a>
                         </div>
 
                         <div class="social-info">
                             <h3>Social Studies</h3>
-                            <button type="button">View your Ratings</button>
-                            <datalist>
-                                <table>
-                                    <tr>
-                                        <th>percentage</th>
-                                        <th>Last time studied</th>
-                                        <th>topics studied most</th>
-                                    </tr>
-                                    <tr>
-                                        <td>80%</td>
-                                        <td>An Hour Ago</td>
-                                        <td>Our Culture</td>
-                                    </tr>
-                                </table>
-                            </datalist>
+                            <details>
+                                <button type="button">View your Ratings</button>
+                                <datalist>
+                                    <table>
+                                        <tr>
+                                            <th>percentage</th>
+                                            <th>Last time studied</th>
+                                            <th>topics studied most</th>
+                                        </tr>
+                                        <tr>
+                                            <td>80%</td>
+                                            <td>An Hour Ago</td>
+                                            <td>Our Culture</td>
+                                        </tr>
+                                    </table>
+                                </datalist>
+                            </details>
                             <a href="#Social Studies"><button>Learn Social Studies</button></a>
                         </div>
                     </div>
@@ -172,11 +188,73 @@
                         </div>
 
                     </div>
+
+                    <div class="Quiz-info">
+                        <div class="Quiz-card">
+                            <div class="Quiz-stat">
+                                <h2>Quiz Ratings</h2>
+                                <span>Science</span>
+                                <button type="button" class="btn">Ratings</button>
+                                <span>English</span>
+                                <button type="button" class="btn">Ratings</button>
+                                <span>Social Studies</span>
+                                <button type="button" class="btn">Ratings</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
     </section>
+
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <div class="quiz-footer">
+                    <h3>Quiz site</h3>
+                    <p>study to improve your knowledge, but be ready to learn, unlearn and relearn</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-colunm">
+                        <h4>Products</h4>
+                        <a href="./Quiz.html">Quiz</a>
+                        <div class="dropdown1">
+                            <a href="./learn.html" class="dropdowmn-btn"><i class="fa fa-book"
+                                style="padding: 10px; font-size: 15px;"></i>Learn ▾</a>
+                            <li><a href="#Science">Science</a></li>
+                            <li><a href="#English">English</a></li>                                                                                                
+                            <li><a href="#Social Studies">Social Studies</a></li>
+                        </div>
+                        <div class="dropdown2">
+                            <a href="./learn.html#research" class="dropdown-btn1"><i class="fa fa-search"
+                                style="padding: 10px; font-size: 15px;"></i>Research ▾</a>
+                            <li><a href="https://www.google.com/"><i class="fa fa-google"
+                                style="padding: 10px; font-size: 15px;"></i>Google</a></li>
+                            <li><a href="https://chatgpt.com/"><i class="fa fa-Chatgpt"
+                                style="padding: 10px; font-size: 15px;"></i>Chatgpt</a></li>
+                        </div>
+                        <a href="#dashboard">Dashboard</a>
+                    </div>
+                    <div class="footer-colunm">
+                        <h4>Accounts</h4>
+                        <a href="login.html">Login</a>
+                        <a href="Accounts.html">Sign up</a>
+                    </div>
+                    <div class="footer-colunm">
+                        <h4>Support</h4>
+                        <a href="#">Help Center</a>
+                        <a href="#research">Research</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Quiz Site All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
