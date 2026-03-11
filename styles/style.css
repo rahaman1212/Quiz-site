@@ -1,14 +1,616 @@
-*{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* RESET */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f6f9;
+    color: #222;
+    line-height: 1.7;
+}
+
+/* ================= HEADER & NAV ================= */
+header {
+    background: #0b5ed7;
+    border-radius: 30px;
+    padding: 12px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin: 15px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* DROPDOWNS */
+.dropdown1,
+.dropdown2 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown1 .dropdown-menu,
+.dropdown2 .dropdown-menu {
+    display: none;
+    position: absolute;
+    background: #fff;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 5px 0;
+}
+
+.dropdown1:hover .dropdown-menu,
+.dropdown2:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
     padding: 0;
 }
 
-
-h1,h1,h3,h4,h5{
-    font-size: 2rem;
+.dropdown-menu li a {
+    color: #222;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 0;
 }
 
+.dropdown-menu li a:hover {
+    background: #f0f0f0;
+    color: #0b5ed7;
+}
 
+/* ================= DASHBOARD HEADER ================= */
+.Dashboard-header {
+    background: linear-gradient(135deg, #0b5ed7, #4dabf7);
+    padding: 60px 40px;
+    color: #fff;
+    margin: 0 20px;
+    border-radius: 20px;
+}
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
+.dashboard-welcome {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.dashboard-welcome h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.dashboard-welcome p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* STAT CARDS */
+.dash-stat {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    background: #fff;
+    padding: 25px 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    min-width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-info h2 {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.stat-info p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0b5ed7;
+    margin: 0;
+}
+
+#subject, #topic, #score {
+    display: block;
+    color: #333;
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+/* ================= DASHBOARD CONTENT ================= */
+.dashboard-content {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Dashboard-ratings {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.Dashboard-ratings h2 {
+    color: #0b5ed7;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+/* STUDY CARD */
+.study-card {
+    margin-bottom: 30px;
+}
+
+.study-card h2 {
+    color: #0b5ed7;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.science-info,
+.english-info,
+.social-info {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border-left: 4px solid #0b5ed7;
+}
+
+.science-info h3,
+.english-info h3,
+.social-info h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.science-info button,
+.english-info button,
+.social-info button {
+    background: #0b5ed7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.science-info button:hover,
+.english-info button:hover,
+.social-info button:hover {
+    background: #084298;
+}
+
+.science-info a button,
+.english-info a button,
+.social-info a button {
+    background: #28a745;
+}
+
+.science-info a button:hover,
+.english-info a button:hover,
+.social-info a button:hover {
+    background: #1e7e34;
+}
+
+/* DETAILS/SUMMARY */
+details {
+    margin: 15px 0;
+}
+
+details button {
+    background: #6c757d;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+details button:hover {
+    background: #5a6268;
+}
+
+/* TABLES */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    background: #fff;
+}
+
+table th, 
+table td {
+    border: 1px solid #dee2e6;
+    padding: 12px;
+    text-align: left;
+}
+
+table th {
+    background: #0b5ed7;
+    color: #fff;
+    font-weight: 500;
+}
+
+table tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+/* TOPICS INFO */
+.topics-card {
+    margin: 30px 0;
+}
+
+.topics-card h2 {
+    color: #0b5ed7;
+    margin-bottom: 20px;
+}
+
+.most-studied,
+.less-studied {
+    margin-bottom: 25px;
+}
+
+.most-studied h3,
+.less-studied h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+/* QUIZ INFO */
+.Quiz-card {
+    margin-top: 30px;
+}
+
+.Quiz-stat {
+    text-align: center;
+}
+
+.Quiz-stat h2 {
+    color: #0b5ed7;
+    margin-bottom: 20px;
+}
+
+.Quiz-stat span {
+    display: inline-block;
+    margin: 10px 15px;
+    font-weight: 500;
+    color: #333;
+}
+
+.Quiz-stat .btn {
+    background: #ffc107;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-left: 10px;
+    transition: background 0.3s;
+}
+
+.Quiz-stat .btn:hover {
+    background: #ffca2c;
+}
+
+/* ================= FOOTER ================= */
+.footer-section {
+    background: #1a1a2e;
+    color: #fff;
+    padding: 50px 20px 20px;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.quiz-footer {
+    flex: 1;
+    min-width: 250px;
+}
+
+.quiz-footer h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.quiz-footer p {
+    color: #aaa;
+    font-size: 0.95rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-colunm {
+    min-width: 150px;
+}
+
+.footer-colunm h4 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.footer-colunm a {
+    display: block;
+    color: #aaa;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.footer-colunm a:hover {
+    color: #0b5ed7;
+}
+
+.footer-colunm .dropdown1,
+.footer-colunm .dropdown2 {
+    margin-bottom: 10px;
+}
+
+.footer-colunm .dropdown-menu {
+    display: none;
+    position: static;
+    background: transparent;
+    box-shadow: none;
+    padding-left: 15px;
+}
+
+.footer-colunm .dropdown1:hover .dropdown-menu,
+.footer-colunm .dropdown2:hover .dropdown-menu {
+    display: block;
+}
+
+.footer-colunm .dropdown-menu li a {
+    color: #aaa;
+    padding: 5px 0;
+    font-size: 0.9rem;
+}
+
+.footer-colunm .dropdown-menu li a:hover {
+    color: #0b5ed7;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 30px;
+    border-top: 1px solid #333;
+}
+
+.footer-bottom p {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1024px) {
+    .dash-stat {
+        gap: 15px;
+    }
+    
+    .stat-card {
+        min-width: 180px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+        margin: 10px;
+    }
+    
+    nav {
+        justify-content: center;
+    }
+    
+    nav ul {
+        gap: 15px;
+        justify-content: center;
+    }
+    
+    nav a {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+    
+    .Dashboard-header {
+        padding: 40px 20px;
+        margin: 0 10px;
+    }
+    
+    .dashboard-welcome h1 {
+        font-size: 1.8rem;
+    }
+    
+    .dash-stat {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .stat-card {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .dashboard-content {
+        padding: 20px 10px;
+    }
+    
+    .Dashboard-ratings {
+        padding: 20px 15px;
+    }
+    
+    .Dashboard-ratings h2 {
+        font-size: 1.5rem;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-links {
+        justify-content: center;
+    }
+    
+    table {
+        font-size: 14px;
+    }
+    
+    table th, 
+    table td {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .dropdown1, 
+    .dropdown2 {
+        width: 100%;
+    }
+    
+    .dropdown-menu {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+    }
+    
+    .dashboard-welcome h1 {
+        font-size: 1.5rem;
+    }
+    
+    .dashboard-welcome p {
+        font-size: 0.95rem;
+    }
+    
+    .stat-info p {
+        font-size: 1.5rem;
+    }
+    
+    .science-info,
+    .english-info,
+    .social-info {
+        padding: 15px;
+    }
+    
+    .science-info h3,
+    .english-info h3,
+    .social-info h3 {
+        font-size: 1.1rem;
+    }
+    
+    .Quiz-stat span {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .Quiz-stat .btn {
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.stat-card {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.stat-card:nth-child(1) { animation-delay: 0.1s; }
+.stat-card:nth-child(2) { animation-delay: 0.2s; }
+.stat-card:nth-child(3) { animation-delay: 0.3s; }
+
+.dashboard-welcome {
+    animation: fadeIn 0.6s ease-out;
+}
