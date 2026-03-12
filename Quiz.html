@@ -4,46 +4,538 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quiz - Test Your Knowledge</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="./styles/quiz.css">
 </head>
 
 <body>
-    <section>
-        <header>
-            <div class="menu">
-                <nav>
-                    <ul>
-                        <a href="./learn.html"><i class="fa fa-home" style="padding: 10px; font-size: 15px;"></i>Home</a>
-                        <div class="dropdowm1">
-                            <a href="#learn" class="dropdowmn-btn"><i class="fa fa-book" style="padding: 10px; font-size: 15px;"></i>Learn ▾</a>
-                            <li><a href="#Science">Science</a></li>
-                            <li><a href="#English">English</a></li>
-                            <li><a href="#General Knowledge">General Knowledge</a></li>
-                            <li><a href="#Social Studies">Social Studies</a></li>
-                            <li><a href="#Tech">Tech</a></li>
-                            <li><a href="#Arts">Arts</a></li>
-                        </div>
-                        <a href="#quiz"><i class="fa fa-pen" style="padding: 10px; font-size: 15px;"></i>Quiz</a>
-                        <div class="dropdown2">
-                            <a href="#research" class="dropdown-btn1"><i class="fa fa-search" style="padding: 10px; font-size: 15px;"></i>Research ▾</a>
-                            <li><a href="https://www.google.com/">Google</a></li>
-                            <li><a href="https://chatgpt.com/">Chatgpt</a></li>
-                        </div>
-                        <div class="dropdown">
-                            <a href="#accounts" class="dropbtn"><i class="fa fa-user" style="padding: 10px; font-size: 15px;"></i>My Accounts ▾</a>
-                            <a href="./Accounts.html">Create Accounts</a>
-                            <a href="./login.html">login</a>
-                        </div>
-                    </ul>
-                </nav>
+    <a href="./learn.html" class="home-link"><i class="fa fa-arrow-left"></i> Back to Learn</a>
+    
+    <div class="quiz-container">
+        <h1><i class="fa fa-pen"></i> Quiz Time!</h1>
+
+        <!-- Science Section -->
+        <div class="subject-section">
+            <h2>🧪 Science</h2>
+
+            <!-- Reproductive System Questions -->
+            <div class="topic-section">
+                <h3>Reproductive System</h3>
+                
+                <div class="question" data-topic="reproductive">
+                    <p>1. What is the male gamete in the human reproductive system?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q1" value="a"> Egg (Ovum)</label>
+                        <label><input type="radio" name="q1" value="b"> Sperm</label>
+                        <label><input type="radio" name="q1" value="c"> Testosterone</label>
+                        <label><input type="radio" name="q1" value="d"> Estrogen</label>
+                    </div>
+                </div>
+
+                <div class="question" data-topic="reproductive">
+                    <p>2. Where are sperm cells produced?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q2" value="a"> Epididymis</label>
+                        <label><input type="radio" name="q2" value="b"> Testes</label>
+                        <label><input type="radio" name="q2" value="c"> Scrotum</label>
+                        <label><input type="radio" name="q2" value="d"> Vas Deferens</label>
+                    </div>
+                </div>
+
+                <div class="question" data-topic="reproductive">
+                    <p>3. What is the female gamete called?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q3" value="a"> Sperm</label>
+                        <label><input type="radio" name="q3" value="b"> Egg (Ovum)</label>
+                        <label><input type="radio" name="q3" value="c"> Zygote</label>
+                        <label><input type="radio" name="q3" value="d"> Embryo</label>
+                    </div>
+                </div>
+
+                <div class="question" data-topic="reproductive">
+                    <p>4. Where does fertilization occur in the female reproductive system?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q4" value="a"> Uterus</label>
+                        <label><input type="radio" name="q4" value="b"> Fallopian Tubes</label>
+                        <label><input type="radio" name="q4" value="c"> Ovaries</label>
+                        <label><input type="radio" name="q4" value="d"> Vagina</label>
+                    </div>
+                </div>
+
+                <div class="question" data-topic="reproductive">
+                    <p>5. What is the average length of the menstrual cycle?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q5" value="a"> 21 days</label>
+                        <label><input type="radio" name="q5" value="b"> 28 days</label>
+                        <label><input type="radio" name="q5" value="c"> 30 days</label>
+                        <label><input type="radio" name="q5" value="d"> 35 days</label>
+                    </div>
+                </div>
             </div>
-        </header>
-    </section>
 
+            <!-- Introduction to Science Questions -->
+            <div class="topic-section">
+                <h3>Introduction To Science</h3>
+                
+                <div class="question" data-topic="intro-science">
+                    <p>1. Science is defined as the systematic study of nature through:</p>
+                    <div class="options">
+                        <label><input type="radio" name="q6" value="a"> Observation and experimentation</label>
+                        <label><input type="radio" name="q6" value="b"> Reading books</label>
+                        <label><input type="radio" name="q6" value="c"> Memorization</label>
+                        <label><input type="radio" name="q6" value="d"> Watching videos</label>
+                    </div>
+                </div>
 
+                <div class="question" data-topic="intro-science">
+                    <p>2. Which branch of science deals with living things?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q7" value="a"> Physics</label>
+                        <label><input type="radio" name="q7" value="b"> Chemistry</label>
+                        <label><input type="radio" name="q7" value="c"> Biology</label>
+                        <label><input type="radio" name="q7" value="d"> Geology</label>
+                    </div>
+                </div>
 
-        <footer class="footer-section">
+                <div class="question" data-topic="intro-science">
+                    <p>3. What is the first step in the scientific method?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q8" value="a"> Hypothesis</label>
+                        <label><input type="radio" name="q8" value="b"> Observation</label>
+                        type="radio" name="q8" value="c"> Experiment</label <label><input>
+                        <label><input type="radio" name="q8" value="d"> Conclusion</label>
+                    </div>
+                </div>
+
+                <div class="question" data-topic="intro-science">
+                    <p>4. Which scientific skill involves using tools to get accurate values?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q9" value="a"> Observation</label>
+                        <label><input type="radio" name="q9" value="b"> Classification</label>
+                        <label><input type="radio" name="q9" value="c"> Measurement</label>
+                        <label><input type="radio" name="q9" value="d"> Inference</label>
+                    </div>
+                </div>
+
+                <div class="question" data-topic="intro-science">
+                    <p>5. What attitude should a scientist have when reporting results?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q10" value="a"> Dishonesty</label>
+                        <label><input type="radio" name="q10" value="b"> Honesty</label>
+                        <label><input type="radio" name="q10" value="c"> Bias</label>
+                        <label><input type="radio" name="q10" value="d"> Carelessness</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Measurement Questions -->
+            <div class="topic-section">
+                <h3>Measurement</h3>
+                
+                <div class="question" data-topic="measurement">
+                    <p>1. What is measurement?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q11" value="a"> Counting objects</label>
+                        <label><input type="radio" name="q11" value="b"> Finding size by comparing with a standard unit</label>
+                        <label><input type="radio" name="q11" value="c"> Weighing items</label>
+                        <label><input type="radio" name="q11" value="d"> Measuring time only</label>
+                    </div>
+                </div>
+
+                <div class="question" data-topic="measurement">
+                    <p>2. Which instrument is used to measure length?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q12" value="a"> Thermometer</label>
+                        <label><input type="radio" name="q12" value="b"> Ruler</label>
+                        <label><input type="radio" name="q12" value="c"> Balance</label>
+                        <label><input type="radio" name="q12" value="d"> Clock</label>
+                    </div>
+                </div>
+
+                <div class="question" data-topic="measurement">
+                    <p>3. What is the SI unit of mass?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q13" value="a"> Gram</label>
+                        <label><input type="radio" name="q13" value="b"> Kilogram</label>
+                        <label><input type="radio" name="q13" value="c"> Pound</label>
+                        <label><input type="radio" name="q13" value="d"> Ounce</label>
+                    </div>
+                </div>
+
+                <div class="question" data-topic="measurement">
+                    <p>4. Which instrument measures temperature?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q14" value="a"> Ruler</label>
+                        <label><input type="radio" name="q14" value="b"> Thermometer</label>
+                        <label><input type="radio" name="q14" value="c"> Stopwatch</label>
+                        <label><input type="radio" name="q14" value="d"> Balance</label>
+                    </div>
+                </div>
+
+                <div class="question" data-topic="measurement">
+                    <p>5. Which is a standard unit of measurement?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q15" value="a"> Hand span</label>
+                        <label><input type="radio" name="q15" value="b"> Footstep</label>
+                        <label><input type="radio" name="q15" value="c"> Meter</label>
+                        <label><input type="radio" name="q15" value="d"> Cubit</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- English Section -->
+        <div class="subject-section">
+            <h2>📚 English</h2>
+
+            <!-- Verbs Questions -->
+            <div class="topic-section">
+                <h3>Verbs</h3>
+                
+                <div class="question" data-topic="verbs">
+                    <p>1. What is a verb?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q16" value="a"> A word that names a person, place, or thing</label>
+                        <label><input type="radio" name="q16" value="b"> A word that shows action, state, or occurrence</label>
+                        <label><input type="radio" name="q16" value="c"> A word that describes a noun</label>
+                        <label><input type="radio" name="q16" value="d"> A word that connects words</label>
+                    </div>
+                </div>
+
+                <div class="question" data-topic="verbs">
+                    <p>2. Which of these is an action verb?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q17" value="a"> Is</label>
+                        <label><input type="radio" name="q17" value="b"> Run</label>
+                        <label><input type="radio" name="q17" value="c"> Seem</label>
+                        <label><input type="radio" name="q17" value="d"> Become</label>
+                    </div>
+                </div>
+
+                <div class="question" data-topic="verbs">
+                    <p>3. "She is reading a book." - What type of verb is "is reading"?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q18" value="a"> Main verb only</label>
+                        <label><input type="radio" name="q18" value="b"> Helping verb + Main verb</label>
+                        <label><input type="radio" name="q18" value="c"> Linking verb</label>
+                        <label><input type="radio" name="q18" value="d"> Irregular verb</label>
+                    </div>
+                </div>
+
+                <div class="question" data-topic="verbs">
+                    <p>4. Which verb forms the past tense by adding "-ed"?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q19" value="a"> Regular verb</label>
+                        <label><input type="radio" name="q19" value="b"> Irregular verb</label>
+                        <label><input type="radio" name="q19" value="c"> Linking verb</label>
+                        <label><input type="radio" name="q19" value="d"> Helping verb</label>
+                    </div>
+                </div>
+
+                <div class="question" data-topic="verbs">
+                    <p>5. "To read" is an example of:</p>
+                    <div class="options">
+                        <label><input type="radio" name="q20" value="a"> Gerund</label>
+                        <label><input type="radio" name="q20" value="b"> Participle</label>
+                        <label><input type="radio" name="q20" value="c"> Infinitive</label>
+                        <label><input type="radio" name="q20" value="d"> Conjugation</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nouns Questions -->
+            <div class="topic-section">
+                <h3>Nouns</h3>
+                
+                <div class="question" data-topic="nouns">
+                    <p>1. What is a noun?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q21" value="a"> A word that shows action</label>
+                        <label><input type="radio" name="q21" value="b"> A word that names a person, place, thing, or idea</label>
+                        <label><input type="radio" name="q21" value="c"> A word that describes a verb</label>
+                        <label><input type="radio" name="q21" value="d"> A word that connects words</label>
+                    </div>
+                </div>
+
+                <div class="question" data-topic="nouns">
+                    <p>2. Which is a proper noun?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q22" value="a"> boy</label>
+                        <label><input type="radio" name="q22" value="b"> city</label>
+                        <label><input type="radio" name="q22" value="c"> Ghana</label>
+                        <label><input type="radio" name="q22" value="d"> teacher</label>
+                    </div>
+                </div>
+
+                <div class="question" data-topic="nouns">
+                    <p>3. Which type of noun cannot be seen or touched?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q23" value="a"> Concrete noun</label>
+                        <label><input type="radio" name="q23" value="b"> Abstract noun</label>
+                        <label><input type="radio" name="q23" value="c"> Common noun</label>
+                        <label><input type="radio" name="q23" value="d"> Collective noun</label>
+                    </div>
+                </div>
+
+                <div class="question" data-topic="nouns">
+                    <p>4. "Team" is an example of what type of noun?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q24" value="a"> Collective noun</label>
+                        <label><input type="radio" name="q24" value="b"> Proper noun</label>
+                        <label><input type="radio" name="q24" value="c"> Abstract noun</label>
+                        <label><input type="radio" name="q24" value="d"> Material noun</label>
+                    </div>
+                </div>
+
+                <div class="question" data-topic="nouns">
+                    <p>5. Which is a countable noun?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q25" value="a"> water</label>
+                        <label><input type="radio" name="q25" value="b"> information</label>
+                        <label><input type="radio" name="q25" value="c"> book</label>
+                        <label><input type="radio" name="q25" value="d"> rice</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Story Telling Questions -->
+            <div class="topic-section">
+                <h3>Story Telling</h3>
+                
+                <div class="question" data-topic="storytelling">
+                    <p>1. What is storytelling?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q26" value="a"> Reading a book silently</label>
+                        <label><input type="radio" name="q26" value="b"> The art of telling a story to entertain, inform, or teach</label>
+                        <label><input type="radio" name="q26" value="c"> Writing a diary entry</label>
+                        <label><input type="radio" name="q26" value="d"> Making a list</label>
+                    </div>
+                </div>
+
+                <div class="question" data-topic="storytelling">
+                    <p>2. Who is the main character in a story called?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q27" value="a"> Antagonist</label>
+                        <label><input type="radio" name="q27" value="b"> Protagonist</label>
+                        <label><input type="radio" name="q27" value="c"> Minor character</label>
+                        <label><input type="radio" name="q27" value="d"> Narrator</label>
+                    </div>
+                </div>
+
+                <div class="question" data-topic="storytelling">
+                    <p>3. What is the setting of a story?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q28" value="a"> The main events</label>
+                        <label><input type="radio" name="q28" value="b"> Where and when the story happens</label>
+                        <label><input type="radio" name="q28" value="c"> The problem in the story</label>
+                        <label><input type="radio" name="q28" value="d"> The ending of the story</label>
+                    </div>
+                </div>
+
+                <div class="question" data-topic="storytelling">
+                    <p>4. Which is NOT one of the five main elements of a story?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q29" value="a"> Characters</label>
+                        <label><input type="radio" name="q29" value="b"> Setting</label>
+                        <label><input type="radio" name="q29" value="c"> Spelling</label>
+                        <label><input type="radio" name="q29" value="d"> Plot</label>
+                    </div>
+                </div>
+
+                <div class="question" data-topic="storytelling">
+                    <p>5. What is the moral of a story?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q30" value="a"> The main character's name</label>
+                        <label><input type="radio" name="q30" value="b"> The lesson learned from the story</label>
+                        <label><input type="radio" name="q30" value="c"> The place where the story happens</label>
+                        <label><input type="radio" name="q30" value="d"> The number of pages</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Studies Section -->
+        <div class="subject-section">
+            <h2>🌍 Social Studies</h2>
+
+            <!-- Colonization Questions -->
+            <div class="topic-section">
+                <h3>Colonization</h3>
+                
+                <div class="question" data-topic="colonization">
+                    <p>1. What is colonization?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q31" value="a"> A country becoming independent</label>
+                        <label><input type="radio" name="q31" value="b"> One country taking control over another territory and exploiting its resources</label>
+                        <label><input type="radio" name="q31" value="c"> Trading between countries</label>
+                        <label><input type="radio" name="q31" value="d"> Peaceful agreement between nations</label>
+                    </div>
+                </div>
+
+                <div class="question" data-topic="colonization">
+                    <p>2. Which European country colonized Ghana (Gold Coast)?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q32" value="a"> France</label>
+                        <label><input type="radio" name="q32" value="b"> Britain</label>
+                        <label><input type="radio" name="q32" value="c"> Portugal</label>
+                        <label><input type="radio" name="q32" value="d"> Germany</label>
+                    </div>
+                </div>
+
+                <div class="question" data-topic="colonization">
+                    <p>3. What was the Berlin Conference?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q33" value="a"> A meeting where Europe divided Africa among themselves</label>
+                        <label><input type="radio" name="q33" value="b"> A trade agreement</label>
+                        <label><input type="radio" name="q33" value="c"> A peace treaty</label>
+                        <label><input type="radio" name="q33" value="d"> An educational conference</label>
+                    </div>
+                </div>
+
+                <div class="question" data-topic="colonization">
+                    <p>4. Which was a method used by colonizers to control colonies?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q34" value="a"> Divide and Rule</label>
+                        <label><input type="radio" name="q34" value="b"> Giving independence</label>
+                        <label><input type="radio" name="q34" value="c"> Helping local leaders</label>
+                        <label><input type="radio" name="q34" value="d"> Respecting local customs</label>
+                    </div>
+                </div>
+
+                <div class="question" data-topic="colonization">
+                    <p>5. Who resisted colonization in West Africa?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q35" value="a"> Samory Toure</label>
+                        <label><input type="radio" name="q35" value="b"> Queen Victoria</label>
+                        <label><input type="radio" name="q35" value="c"> Nelson Mandela</label>
+                        <label><input type="radio" name="q35" value="d"> Mahatma Gandhi</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Culture Questions -->
+            <div class="topic-section">
+                <h3>Culture</h3>
+                
+                <div class="question" data-topic="culture">
+                    <p>1. What is culture?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q36" value="a"> Only religious beliefs</label>
+                        <label><input type="radio" name="q36" value="b"> The way of life of a group of people</label>
+                        <label><input type="radio" name="q36" value="c"> Language only</label>
+                        <label><input type="radio" name="q36" value="d"> Food and clothing</label>
+                    </div>
+                </div>
+
+                <div class="question" data-topic="culture">
+                    <p>2. Which is an example of material culture?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q37" value="a"> Beliefs</label>
+                        <label><input type="radio" name="q37" value="b"> Values</label>
+                        <label><input type="radio" name="q37" value="c"> Houses and clothes</label>
+                        <label><input type="radio" name="q37" value="d"> Religion</label>
+                    </div>
+                </div>
+
+                <div class="question" data-topic="culture">
+                    <p>3. Which is a characteristic of culture?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q38" value="a"> It is inherited genetically</label>
+                        <label><input type="radio" name="q38" value="b"> It is learned and shared</label>
+                        <label><input type="radio" name="q38" value="c"> It never changes</label>
+                        <label><input type="radio" name="q38" value="d"> It is the same everywhere</label>
+                    </div>
+                </div>
+
+                <div class="question" data-topic="culture">
+                    <p>4. What is cultural diversity?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q39" value="a"> Everyone having the same culture</label>
+                        <label><input type="radio" name="q39" value="b"> Different societies having different cultures</label>
+                        <label><input type="radio" name="q39" value="c"> One culture taking over another</label>
+                        <label><input type="radio" name="q39" value="d"> Losing one's culture</label>
+                    </div>
+                </div>
+
+                <div class="question" data-topic="culture">
+                    <p>5. Which is a traditional Ghanaian festival?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q40" value="a"> Christmas</label>
+                        <label><input type="radio" name="q40" value="b"> Homowo</label>
+                        <label><input type="radio" name="q40" value="c"> Easter</label>
+                        <label><input type="radio" name="q40" value="d"> Halloween</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Constitution Questions -->
+            <div class="topic-section">
+                <h3>Our Constitution</h3>
+                
+                <div class="question" data-topic="constitution">
+                    <p>1. What is a constitution?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q41" value="a"> A set of rules for running a country</label>
+                        <label><input type="radio" name="q41" value="b"> A history book</label>
+                        <label><input type="radio" name="q41" value="c"> A religious text</label>
+                        <label><input type="radio" name="q41" value="d"> A newspaper</label>
+                    </div>
+                </div>
+
+                <div class="question" data-topic="constitution">
+                    <p>2. Which year is Ghana's current constitution?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q42" value="a"> 1957</label>
+                        <label><input type="radio" name="q42" value="b"> 1992</label>
+                        <label><input type="radio" name="q42" value="c"> 1960</label>
+                        <label><input type="radio" name="q42" value="d"> 1979</label>
+                    </div>
+                </div>
+
+                <div class="question" data-topic="constitution">
+                    <p>3. How many arms of government does Ghana have?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q43" value="a"> Two</label>
+                        <label><input type="radio" name="q43" value="b"> Three</label>
+                        <label><input type="radio" name="q43" value="c"> Four</label>
+                        <label><input type="radio" name="q43" value="d"> Five</label>
+                    </div>
+                </div>
+
+                <div class="question" data-topic="constitution">
+                    <p>4. Which is a fundamental human right in Ghana's constitution?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q44" value="a"> Right to drive</label>
+                        <label><input type="radio" name="q44" value="b"> Right to life</label>
+                        <label><input type="radio" name="q44" value="c"> Right to work anywhere</label>
+                        <label><input type="radio" name="q44" value="d"> Right to own any property</label>
+                    </div>
+                </div>
+
+                <div class="question" data-topic="constitution">
+                    <p>5. What does "separation of powers" mean?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q45" value="a"> One person has all the power</label>
+                        <label><input type="radio" name="q45" value="b"> Executive, legislature, and judiciary work independently</label>
+                        <label><input type="radio" name="q45" value="c"> People vote for everything</label>
+                        <label><input type="radio" name="q45" value="d"> The president makes all decisions</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn" onclick="submitQuiz()">Submit Quiz</button>
+
+        <div class="result" id="result">
+            <div class="score-display" id="scoreDisplay"></div>
+            <p id="resultMessage"></p>
+        </div>
+    </div>
+
+    <script src="../QUIZ/js/quiz.js"></script>
+
+    <footer class="footer-section">
         <div class="container">
             <div class="footer-content">
                 <div class="quiz-footer">
@@ -79,7 +571,6 @@
                     <div class="footer-colunm">
                         <h4>Support</h4>
                         <a href="#">Help Center</a>
-                        <a href="#research">Research</a>
                     </div>
                 </div>
 
@@ -88,7 +579,6 @@
         </div>
 
     </footer>
-    
 </body>
 
 </html>
