@@ -230,3 +230,103 @@ nav a:hover {
         .home-link:hover {
             text-decoration: underline;
         }
+
+        .footer-section {
+    background: #1a1a2e;
+    color: #fff;
+    padding: 50px 20px 20px;
+    margin-bottom: 0px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.quiz-footer {
+    flex: 1;
+    min-width: 250px;
+}
+
+.quiz-footer h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.quiz-footer p {
+    color: #aaa;
+    font-size: 0.95rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-colunm {
+    min-width: 150px;
+}
+
+.footer-colunm h4 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.footer-colunm a {
+    display: block;
+    color: #aaa;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.footer-colunm a:hover {
+    color: #0b5ed7;
+}
+
+.footer-colunm .dropdown1,
+.footer-colunm .dropdown2 {
+    margin-bottom: 10px;
+}
+
+.footer-colunm .dropdown-menu {
+    display: none;
+    position: static;
+    background: transparent;
+    box-shadow: none;
+    padding-left: 15px;
+}
+
+.footer-colunm .dropdown1:hover .dropdown-menu,
+.footer-colunm .dropdown2:hover .dropdown-menu {
+    display: block;
+}
+
+.footer-colunm .dropdown-menu li a {
+    color: #aaa;
+    padding: 5px 0;
+    font-size: 0.9rem;
+}
+
+.footer-colunm .dropdown-menu li a:hover {
+    color: #0b5ed7;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 30px;
+    border-top: 1px solid #333;
+}
+
+.footer-bottom p {
+    color: #777;
+    font-size: 0.9rem;
+}
