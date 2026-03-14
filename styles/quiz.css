@@ -174,8 +174,20 @@ nav a:hover {
         }
 
         .btn {
-            display: block;
-            width: 100%;
+            width: 50%;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .btn1 {
+            width: 50%;
             padding: 15px 30px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
@@ -235,7 +247,7 @@ nav a:hover {
     background: #1a1a2e;
     color: #fff;
     padding: 50px 20px 20px;
-    margin-bottom: 0px;
+    margin: auto;
 }
 
 .footer-content {

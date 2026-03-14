@@ -41,11 +41,10 @@
     </section>
     <a href="./learn.html" class="home-link"><i class="fa fa-arrow-left"></i> Back to Learn</a>
     
-    <div class="quiz-container">
         <h1><i class="fa fa-pen"></i> Quiz Time!</h1>
 
         <!-- Science Section -->
-        <div class="subject-section">
+        <section class="subject-section">
             <h2>🧪 Science</h2>
 
             <!-- Reproductive System Questions -->
@@ -100,12 +99,16 @@
                         <label><input type="radio" name="q5" value="c"> 30 days</label>
                         <label><input type="radio" name="q5" value="d"> 35 days</label>
                     </div>
-
-                    <button class="btn" onclick="submitQuiz()">Submit Quiz</button>
+                    <div>
+                        <center>
+                            <button class="btn" onclick="submitQuiz()">Submit Quiz</button>
+                            <button class="btn1" onclick="results()">view score</button>
+                        </center>
+                    </div>
 
                     <div class="result" id="result">
                         <div class="score-display" id="scoreDisplay">
-                            <button class="btn" onclick="results()">view score</button>
+
                         </div>
                         <p id="resultMessage"></p>
                     </div>
@@ -241,11 +244,11 @@
                 </div>
 
             </div>
-        </div>
+        </section>
 
 
         <!-- English Section -->
-        <div class="subject-section">
+        <section class="subject-section">
             <h2>📚 English</h2>
 
             <!-- Verbs Questions -->
@@ -441,10 +444,10 @@
                     <p id="resultMessage"></p>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Social Studies Section -->
-        <div class="subject-section">
+        <section class="subject-section">
             <h2>🌍 Social Studies</h2>
 
             <!-- Colonization Questions -->
@@ -640,12 +643,7 @@
                 </div>
 
             </div>
-        </div>
-
-        
-    </div>
-
-    <script src="../QUIZ/js/quiz.js"></script>
+        </section>
 
     <footer class="footer-section">
         <div class="container">
@@ -687,10 +685,14 @@
                 </div>
 
             </div>
-
+            <div class="footer-bottom">
+                <p>&copy; 2026 Quiz Site All rights reserved.</p>
+            </div>
         </div>
 
     </footer>
+    <script src="../QUIZ/js/quiz.js"></script>
+
 </body>
 
 </html>
