@@ -256,6 +256,33 @@ nav a:hover {
     gap: 30px;
 }
 
+.scroll-btn {
+  position: fixed;
+  right: 20px;
+  background: #00d9ff;
+  border: none;
+  color: #000;
+  font-size: 22px;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(0, 217, 255, 0.5);
+  transition: 0.3s;
+}
+
+.scroll-btn:hover {
+  background: #009ac1;
+}
+
+.scroll-btn.up {
+  bottom: 90px;
+}
+
+.scroll-btn.down {
+  bottom: 30px;
+}
+
 .quiz-footer {
     flex: 1;
     min-width: 250px;
