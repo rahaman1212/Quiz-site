@@ -263,7 +263,7 @@ table th {
 }
 
 .scroll-btn.up{
-  position: relative;
+  position: fixed;
   left: 1200px;
   bottom: 60px;
   border-radius: 15px;
@@ -272,23 +272,32 @@ table th {
   height: 45px;
   width: 45px;
   background-color: #0b5ed7;
-  color: white;
+  color: #000;
   text-align: center;
   cursor: pointer;
   transition: 0.3s;
 }
 
+.scroll-btn.up:hover {
+  opacity: 0.5;
+}
+
 .scroll-btn.down{
-  position: relative;
-  left: 1150px;
+  position: fixed;
+  right: 20px;
+  bottom: 10px;
   border-radius: 15px;
   border: none;
   font-size: 30px;
   height: 45px;
   width: 45px;
   background-color: #0b5ed7;
-  color: white;
+  color: #000;
   text-align: center;
   cursor: pointer;
   transition: 0.3s;
+}
+
+.scroll-btn.down:hover {
+  opacity: 0.5;
 }

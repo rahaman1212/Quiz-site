@@ -259,11 +259,11 @@ nav a:hover {
 .scroll-btn {
   position: fixed;
   right: 20px;
-  background: #00d9ff;
+  background: #0b5ed7;
   border: none;
   color: #000;
   font-size: 22px;
-  border-radius: 50%;
+  border-radius: 15px;
   width: 45px;
   height: 45px;
   cursor: pointer;
@@ -272,7 +272,7 @@ nav a:hover {
 }
 
 .scroll-btn:hover {
-  background: #009ac1;
+  opacity: 0.5;
 }
 
 .scroll-btn.up {

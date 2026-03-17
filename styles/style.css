@@ -38,7 +38,7 @@ nav ul {
 }
 
 nav a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
     font-weight: 500;
     padding: 8px 12px;
@@ -51,41 +51,35 @@ nav a:hover {
 }
 
 /* DROPDOWNS */
-.dropdown1,
+.dropdown,
+.dropdowm1,
 .dropdown2 {
-    position: relative;
-    display: inline-block;
+  position: relative;
 }
 
-.dropdown1 .dropdown-menu,
-.dropdown2 .dropdown-menu {
-    display: none;
-    position: absolute;
-    background: #fff;
-    min-width: 160px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-    border-radius: 8px;
-    z-index: 1;
-    top: 100%;
-    left: 0;
-    list-style: none;
-    padding: 5px 0;
+.dropdown a + a,
+.dropdowm1 li,
+.dropdown2 li {
+  display: none;
 }
 
-.dropdown1:hover .dropdown-menu,
-.dropdown2:hover .dropdown-menu {
-    display: block;
+.dropdown:hover a + a,
+.dropdowm1:hover li,
+.dropdown2:hover li {
+  display: block;
 }
 
-.dropdown-menu li {
-    padding: 0;
+.dropdown li,
+.dropdowm1 li,
+.dropdown2 li {
+  background: #fff;
+  padding: 10px 15px;
 }
 
-.dropdown-menu li a {
-    color: #222;
-    padding: 10px 15px;
-    display: block;
-    border-radius: 0;
+.dropdown li a,
+.dropdowm1 li a,
+.dropdown2 li a {
+  color: #222;
 }
 
 .dropdown-menu li a:hover {
@@ -358,11 +352,11 @@ table tr:nth-child(even) {
 .scroll-btn {
   position: fixed;
   right: 20px;
-  background: #00d9ff;
+  background: #0b5ed7;
   border: none;
   color: #000;
   font-size: 22px;
-  border-radius: 50%;
+  border-radius: 15px;
   width: 45px;
   height: 45px;
   cursor: pointer;
@@ -371,7 +365,7 @@ table tr:nth-child(even) {
 }
 
 .scroll-btn:hover {
-  background: #009ac1;
+  opacity: 0.5;
 }
 
 .scroll-btn.up {
