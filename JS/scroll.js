@@ -1,3 +1,6 @@
+// ===== DIAGNOSTIC: Check if script is running =====
+console.log('scroll.js loaded');
+
 // ===== Smooth Scroll for Navbar Links =====
 document.querySelectorAll('nav a').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
@@ -12,6 +15,14 @@ document.querySelectorAll('nav a').forEach(anchor => {
 // ===== Scroll to Top & Bottom Buttons =====
 const scrollTopBtn = document.getElementById("scrollTopBtn");
 const scrollBottomBtn = document.getElementById("scrollBottomBtn");
+
+// ===== DIAGNOSTIC: Check if buttons exist =====
+console.log('scrollTopBtn element:', scrollTopBtn);
+console.log('scrollBottomBtn element:', scrollBottomBtn);
+
+if (!scrollTopBtn || !scrollBottomBtn) {
+  console.error('ERROR: Scroll buttons not found! Make sure scroll.js is included in your HTML.');
+}
 
 scrollTopBtn.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
